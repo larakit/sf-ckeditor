@@ -1,0 +1,20 @@
+{
+    "name": "larakit/sf-ckeditor",
+    "description": "[Larakit] [staticfiles] sf-ckeditor",
+    "license": "MIT",
+    "version": "1.0.0",
+    "require": {
+        "larakit/lk-staticfiles":"*"
+    },
+    "authors": [
+        {
+            "name": "Alexey Berdnikov",
+            "email": "aberdnikov@gmail.com"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "init.php"
+        ]
+    }
+}
