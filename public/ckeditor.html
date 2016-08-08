@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CKeditor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<textarea name="test" class="js-wysiwyg-area" cols="30" rows="10">asdfsadf</textarea>
+
+<div class="wysiwyg"></div>
+
+<button class="js-add-textarea">Добавить textarea</button>
+
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src="https://cdn.ckeditor.com/4.5.10/standard/ckeditor.js"></script>
+<script src="./ckeditor.js"></script>
+<script src="./plugin.js"></script>
+<script>
+    (function ($) {
+        $('.js-add-textarea').on('click', function () {
+            $('<div><textarea class="js-wysiwyg-area" name="test" cols="30" rows="10">asdfsadf</textarea><button onclick="addWysiwyg($(this))">Включить визивиг</button></div>').appendTo('.wysiwyg');
+            return false;
+        });
+        $('.js-wysiwyg-area').laraWysiwyg();
+    })($);
+
+    function addWysiwyg($this) {
+            $this.parent().find('.js-wysiwyg-area').laraWysiwyg();
+        return false;
+    }
+
+</script>
+</body>
+</html>
