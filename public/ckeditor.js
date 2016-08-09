@@ -1,9 +1,11 @@
 var LarakitWysiwyg = {
     instances: {},
 
+
     config: {
-        allowedContent: true,
-        /* extraPlugins: 'form-content,imgparser',*/
+
+        allowedContent: true
+        /*,
         toolbarGroups: [
             {name: 'document', groups: ['mode', 'document', 'doctools']},
             {name: 'clipboard', groups: ['clipboard', 'undo']},
@@ -19,8 +21,8 @@ var LarakitWysiwyg = {
             {name: 'tools'},
             {name: 'others'},
             {name: 'about'}
-            /* { name: 'form-content'} */
-        ]
+            { name: 'form-content'}
+        ]*/
     },
 
     getConfig: function ($element) {
